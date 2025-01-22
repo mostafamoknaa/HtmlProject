@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffefd5;
+}
+header {
+    padding: 2rem;
+    background-color: #ff6f61;
+    color: white;
+}
+#initial-content, #form-content {
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+#form-content {
+    display: none;
+}
+#content-container {
+    margin: 2rem auto;
+    padding: 2rem;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+textarea {
+    width: 80%;
+    height: 100px;
+    margin-top: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e64a45;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Animation for showing the form after 5 seconds */
+@keyframes showContent {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+/* Trigger animation after 5 seconds */
+#initial-content {
+    animation: fadeOut 1s ease forwards;
+    animation-delay: 5s;
+}
+#form-content {
+    display: block;
+    animation: showContent 1s ease forwards;
+    animation-delay: 5s;
+}
+/* Fade-out animation for the initial content */
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
