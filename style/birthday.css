@@ -1,85 +1,101 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    background-color: #ffefd5;
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: var(--main-bg-color);
+color: var(--text-color);
 }
+
 header {
-    padding: 2rem;
-    background-color: #ff6f61;
-    color: white;
+padding: 2rem;
+background-color: var(--accent-color);
+color: var(--footer-text-color);
 }
-#initial-content, #form-content {
-    opacity: 0;
-    transition: opacity 1s ease;
-}
-#form-content {
-    display: none;
-}
+
 #content-container {
-    margin: 2rem auto;
-    padding: 2rem;
+margin: 2rem auto;
+padding: 2rem;
 }
+
 img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 textarea {
-    width: 80%;
-    height: 100px;
-    margin-top: 1rem;
-    font-size: 1rem;
-    padding: 0.5rem;
+width: 80%;
+height: 100px;
+margin-top: 1rem;
+font-size: 1rem;
+padding: 0.5rem;
+border: 1px solid var(--accent-color);
+border-radius: 5px;
 }
+
 button {
-    margin-top: 1rem;
-    padding: 0.5rem 2rem;
-    font-size: 1rem;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+margin-top: 1rem;
+padding: 0.5rem 2rem;
+font-size: 1rem;
+background-color: var(--accent-color);
+color: var(--footer-text-color);
+border: none;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease;
 }
+
 button:hover {
-    background-color: #e64a45;
+background-color: var(--button-hover-color);
 }
+
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color:gray;
-    color: white;
+text-align: center;
+padding: 1rem;
+background-color: var(--footer-bg-color);
+color: var(--footer-text-color);
 }
 
 /* Animation for showing the form after 5 seconds */
 @keyframes showContent {
-    0% {
-        display: block;
-        opacity: 0;
-    }
-    100% {
-        display: block;
-        opacity: 1;
-    }
-}
-/* Trigger animation after 5 seconds */
-#initial-content {
-    animation: fadeOut 1s ease forwards;
-    animation-delay: 5s;
-}
-#form-content {
+0% {
     display: block;
-    animation: showContent 1s ease forwards;
-    animation-delay: 5s;
+    opacity: 0;
 }
+100% {
+    display: block;
+    opacity: 1;
+}
+}
+
+#initial-content, #form-content {
+opacity: 0;
+transition: opacity 1s ease;
+}
+
+#form-content {
+display: none;
+}
+
+#initial-content {
+animation: fadeOut 1s ease forwards;
+animation-delay: 5s;
+}
+
+#form-content {
+display: block;
+animation: showContent 1s ease forwards;
+animation-delay: 5s;
+}
+
 /* Fade-out animation for the initial content */
 @keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+0% {
+    opacity: 1;
+}
+100% {
+    opacity: 0;
+}
 }

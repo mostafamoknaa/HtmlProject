@@ -2,27 +2,44 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: #C1BAA1;
+    color: black;
 }
+
 header {
     text-align: center;
     padding: 2rem;
-    color:burlywood;
+    color: #8b5e3c; 
+    background-color: #D7D3BF; 
 }
+
 .about {
     text-align: center;
-    
+    margin: 2rem auto;
 }
+
 .about img {
     max-width: 200px;
     border-radius: 50%;
     margin-top: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     
 }
+
+.about img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3); 
+}
+
 footer {
     text-align: center;
     padding: 1rem;
-    background-color:gray;
-    color: white;
+    background-color: #A59D84; 
+    font-size: 0.9rem; 
 }
 
+.socialinfo{
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+}
