@@ -10,6 +10,7 @@ h1{
 
 h2{
     color: #8b5e3c; 
+    margin-left: 10px;
 }
    
 .dropbtn {
@@ -25,6 +26,7 @@ h2{
   .dropdown {
     position: relative;
     display: inline-block;
+    margin-left: 10px;
   }
   
   .dropdown-content {
