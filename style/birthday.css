@@ -14,16 +14,9 @@ color: var(--footer-text-color);
 }
 
 #content-container {
-margin: 2rem auto;
 padding: 2rem;
 }
 
-img {
-max-width: 100%;
-height: auto;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
 textarea {
 width: 80%;
@@ -35,21 +28,23 @@ border: 1px solid var(--accent-color);
 border-radius: 5px;
 }
 
-button {
-margin-top: 1rem;
-padding: 0.5rem 2rem;
-font-size: 1rem;
-background-color: var(--accent-color);
-color: var(--footer-text-color);
-border: none;
-border-radius: 5px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-}
+form button {
+    padding: 0.75rem;
+    border: none;
+    background-color: burlywood;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 15%;
+    margin-left: 4rem;
+  }
 
-button:hover {
-background-color: var(--button-hover-color);
-}
+  form button:hover {
+    background-color: gray;
+  }
 
 footer {
 text-align: center;
