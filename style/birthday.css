@@ -1,4 +1,4 @@
-/* General Styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -22,7 +22,7 @@ footer {
     margin-top: 2rem;
 }
 
-/* Birthday Container */
+
 .birthday-container {
     position: relative;
     width: 80%;
@@ -36,7 +36,6 @@ footer {
 
 
 
-/* Initial Image */
 .image-container {
     display: block;
     animation: hideImage 5s forwards;
@@ -47,7 +46,6 @@ footer {
     border-radius: 10px;
 }
 
-/* Hidden Message Form */
 .message-form {
     opacity: 0;
     visibility: hidden;
@@ -88,7 +86,7 @@ img{
     background-color: gray;
 }
 
-/* Animations */
+
 @keyframes hideImage {
     0% {
         opacity: 1;
