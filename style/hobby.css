@@ -27,7 +27,7 @@ header {
 }
 
 .gallery img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 footer {
