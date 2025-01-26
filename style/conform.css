@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+    background-color: #D7D3BF; 
     text-align: center;
   }
 
@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: burlywood;
+    color:black;
   }
 
   .thank-you-container h1 {
@@ -28,7 +28,7 @@ body {
   .thank-you-container a {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background-color: burlywood;
+    background-color: #D7D3BF; 
     color: white;
     text-decoration: none;
     font-size: 1rem;
